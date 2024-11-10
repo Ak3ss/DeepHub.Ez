@@ -521,7 +521,7 @@ do
             Size = UDim2.new(0, 6, 0, 6);
             BackgroundTransparency = 1;
             Image = 'http://www.roblox.com/asset/?id=9619665977';
-            ImageColor3 = Color3.new(0, 0, 0);
+            ImageColor3 = Color3.new(0, 0, 255);
             ZIndex = 19;
             Parent = SatVibMap;
         });
