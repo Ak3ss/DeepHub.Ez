@@ -11,35 +11,3 @@ getgenv().LibTheme = {
 }
 
 local Library = loadstring(game:HttpGet("https://github.com/slf0Dev/Ocerium_Project/raw/main/Ocerium%20Special%20ui"))()
-
-local Main = Library.Main("Ocerium")
-
-local Page = Main.Page("Page","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
-
-local Section = Page.Section("Section")
-
-local Toggle = Section.Component("Toggle","Toggle Name",function(bool)
-  
-end,false)
-
-local Dropdown = Section.Component("Dropdown","Dropdown Name",table,false,function(string,bool)
-
-end,false)
-
-local Slider = Section.Component("Slider","Slider Name",0,100,false,function(value)
-
-end,50)
-
-local Button = Section.Component("Button","Button Name",function()
-
-end)
-
-local Paragraph = Section.Component("Card", "Title", "Text here")
-
-local Logs = Main.Logs("Logs name")
-
-local log1 = Logs.LogWithButtons("smh")
-
-local logbutton = log1.Button("something",function()
-
-end)
