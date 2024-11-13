@@ -229,7 +229,7 @@ local function createOriginialElements()
 		background.BorderSizePixel = 0
 		background.ClipsDescendants = true
 		background.Position = UDim2.new(0.5, 0, 0.5, 0)
-		background.Size = UDim2.new(0.5, 0, 0.2, 0)
+		background.Size = UDim2.new(0.5, 0, 0.5, 0)
 
 		backgroundAspectRatioConstraint.Name = "BackgroundUIAspectRatioConstraint"
 		backgroundAspectRatioConstraint.Parent = background
