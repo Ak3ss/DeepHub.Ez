@@ -2005,7 +2005,8 @@ function Library.new(windowName: string, constrainToScreen: boolean?, width: num
 			if playbackState == Enum.PlaybackState.Completed then
 				buttonHolder.Minus.Visible = false
 				buttonHolder.Plus.Visible = true
-				heading.TextSize = 0.000
+				title.TextTransparency = 1
+                title.TextStrokeTransparency = 1
 				minimizePlusImageTween:Play()
 			end
 		end)
@@ -2028,7 +2029,8 @@ function Library.new(windowName: string, constrainToScreen: boolean?, width: num
 				local maximizeWindowDownTween = TweenService:Create(background, TweenInfo.new(.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, originialWindowSize.X, 0, originialWindowSize.Y), Position = UDim2.new(0,backgroundAbsPos.X + originialWindowSize.X / 2,0,backgroundAbsPos.Y + originialWindowSize.Y / 2 + 36)})
 				buttonHolder.Plus.Visible = false
 				buttonHolder.Minus.Visible = true
-				heading.TextSize = 14.000
+                title.TextTransparency = 0
+                title.TextStrokeTransparency = 0
 				maximizeWindowDownTween:Play()
 				maximizeMinusImageTween:Play()
 			end
